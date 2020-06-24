@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "bedevops-fox": {
+    "angular-base": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/bedevops-fox",
+            "outputPath": "dist/angular-base",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "bedevops-fox:build"
+            "browserTarget": "angular-base:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "bedevops-fox:build:production"
+              "browserTarget": "angular-base:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "bedevops-fox:build"
+            "browserTarget": "angular-base:build"
           }
         },
         "test": {
@@ -110,15 +110,19 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "bedevops-fox:serve"
+            "devServerTarget": "angular-base:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "bedevops-fox:serve:production"
+              "devServerTarget": "angular-base:serve:production"
             }
           }
         }
       }
-    }},
-  "defaultProject": "bedevops-fox"
+    }
+  },
+  "defaultProject": "angular-base",
+  "cli": {
+    "analytics": false
+  }
 }
