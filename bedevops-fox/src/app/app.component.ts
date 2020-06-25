@@ -12,4 +12,8 @@ export class AppComponent {
 
   constructor() {
   }
+
+  isLogin() {
+    return true;
+  }
 }
