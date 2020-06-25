@@ -11,9 +11,9 @@ import {JwtModule} from '@auth0/angular-jwt';
 import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import {TokenInterceptor} from './auth/token.interceptor';
 import {DatePipe} from '@angular/common';
-import { NotFoundComponent } from './errors/not-found/not-found.component';
-import { ServerErrorComponent } from './errors/server-error/server-error.component';
-import { ForbidenComponent } from './errors/forbiden/forbiden.component';
+import {NotFoundComponent} from './errors/not-found/not-found.component';
+import {ServerErrorComponent} from './errors/server-error/server-error.component';
+import {ForbidenComponent} from './errors/forbiden/forbiden.component';
 
 @NgModule({
   declarations: [

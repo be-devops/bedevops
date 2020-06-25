@@ -1,14 +1,14 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 import {NotFoundComponent} from '../errors/not-found/not-found.component';
-import {DemoPageComponent} from './demo-page/demo-page.component';
+import {HomePageComponent} from "./home-page/home-page.component";
 
 const subRoutes: Routes = [
-  {path: '', redirectTo: 'demo', pathMatch: 'full'},
+  {path: '', redirectTo: 'home', pathMatch: 'full'},
   {
     path: '',
     children: [
-      {path: 'demo', component: DemoPageComponent},
+      {path: 'home', component: HomePageComponent},
       {path: '**', component: NotFoundComponent},
     ]
   },

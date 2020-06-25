@@ -5,9 +5,11 @@ import {AuthGuard} from './guards/auth.guard';
 import {ServerErrorComponent} from './errors/server-error/server-error.component';
 import {NotFoundComponent} from './errors/not-found/not-found.component';
 import {ForbidenComponent} from './errors/forbiden/forbiden.component';
+import {HomePageComponent} from "./pages/home-page/home-page.component";
 
 const routes: Routes = [
-  {path: '', component: LoginComponent, pathMatch: 'full'},
+  {path: '', component: HomePageComponent, pathMatch: 'full'},
+  {path: 'login', component: LoginComponent, pathMatch: 'full'},
   {
     path: 'modules',
     canActivate: [AuthGuard],

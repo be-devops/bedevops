@@ -1,10 +1,10 @@
 import {NgModule} from '@angular/core';
 import {PageRoutingModule} from './page-routing.module';
-import { DemoPageComponent } from './demo-page/demo-page.component';
+import {HomePageComponent} from './home-page/home-page.component';
 
 @NgModule({
   declarations: [
-    DemoPageComponent
+    HomePageComponent
   ],
   imports: [
     PageRoutingModule,
