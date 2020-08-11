@@ -1,5 +1,3 @@
-# bedevops.edu.vn
-
 ## Demo
 * [Fox](https://bedevops.edu.vn/bedevops/fox/)
 * [Edusite](https://bedevops.edu.vn/bedevops/edusite/)
